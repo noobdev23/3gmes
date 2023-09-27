@@ -234,18 +234,6 @@ body {
 }
 
 .waterdrop {
-    
-
-    animation-name: fly;
-    -webkit-animation-duration: 500ms;
-         -o-animation-duration: 500ms;
-            animation-duration: 500ms;
-    -webkit-animation-timing-function: ease-in;
-         -o-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
     background-image: url(../images/EnemyWaterDrop.png);
 }
 
