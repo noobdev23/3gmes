@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Bitcone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <a href="/">RESTART</a>
+    <button id="restartButton">RESTART</button>
     <div id="battleArea">
         <div id="enemies"></div>
     </div>
@@ -17,6 +17,17 @@
     <script src="js/gameSettings.js" defer></script>
     <script src="js/ai.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script>
+        // Add an event listener for the restart button
+        document.addEventListener('DOMContentLoaded', function () {
+            const restartButton = document.getElementById('restartButton');
+            restartButton.addEventListener('click', function () {
+                // Place the code here to restart the game or perform any necessary actions
+                // For example, you can reload the page to restart the game:
+                window.location.reload();
+            });
+        });
+    </script>
 </body>
 
 </html>
