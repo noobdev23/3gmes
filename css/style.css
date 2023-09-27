@@ -10,7 +10,7 @@ body {
     overflow: hidden;
 
     width: auto;
-    height: auto;
+    height: 400px;
 
     background-image: url('../images/battleBackground.jpg');
     background-position: right bottom;
