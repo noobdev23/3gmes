@@ -234,8 +234,7 @@ body {
 }
 
 .waterdrop {
-    width: 90%;
-    height: 90%;
+    
 
     animation-name: fly;
     -webkit-animation-duration: 500ms;
