@@ -270,7 +270,7 @@ Unit.createType = function(unitClass, attcackPower = 10, defensePower = 10, isPl
 
 // Статичный матод инициализации(создания) врагов
 
-Unit.initializeEnemies = function(enemyAmount, type = Unit.types.waterdrop) {
+Unit.initializeEnemies = function(enemyAmount, type = Unit.types.fiat) {
     var enemies = [];
 
     for (var i = 0; i < enemyAmount; i++) {
