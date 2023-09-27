@@ -384,7 +384,7 @@ function initializeLevel(settings) {
     // Объект-список типов юнитов
     Unit.types = {
         player: Unit.createType("player", 30, 18, true),
-        waterdrop: Unit.createType("coin", 1.4, 0)
+        waterdrop: Unit.createType("fiat", 1.4, 0)
     }
     Unit.count = 0;
     Unit.enemies = Unit.initializeEnemies(settings.enemyAmount);
