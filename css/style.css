@@ -9,7 +9,7 @@ body {
     display: block;
     overflow: hidden;
 
-    width: 600px;
+    width: auto;
     height: 600px;
 
     background-image: url('../images/battleBackground.jpg');
