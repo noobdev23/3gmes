@@ -94,7 +94,7 @@ Unit.prototype.attack = function(enemy) {
     enemy.startAnimation("blink");
     enemy.hp -= +hitValue.toFixed(2);
     enemy.hp = enemy.hp.toFixed(1);
-    enemy.showMessage("-" + hitValue.toFixed(2) + " HP", "hit", settings.gameSpeed);
+    enemy.showMessage("-" + hitValue.toFixed(2) + " PP", "hit", settings.gameSpeed);
 
     console.log('enemy.hp:', enemy.hp);
 
