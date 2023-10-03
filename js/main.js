@@ -64,7 +64,7 @@ function Unit(type, xPos = 10, yPos = 10) {
 Unit.prototype.attack = function(enemy) {
     // Check for death 
     if (enemy.state === "dead") {
-        enemy.showMessage(enemy.unitClass + " is dead", "say", 2);
+        enemy.showMessage(enemy.unitClass + " lost ", "say", 2);
         return false;
     }
 
@@ -94,7 +94,7 @@ Unit.prototype.attack = function(enemy) {
     enemy.startAnimation("blink");
     enemy.hp -= +hitValue.toFixed(2);
     enemy.hp = enemy.hp.toFixed(1);
-    enemy.showMessage("-" + hitValue.toFixed(2) + " PP", "hit", settings.gameSpeed);
+    enemy.showMessage("-" + hitValue.toFixed(2) + " Pw ", "hit", settings.gameSpeed);
 
     console.log('enemy.hp:', enemy.hp);
 
@@ -125,11 +125,11 @@ Unit.prototype.shield = function() {
 Unit.prototype.updateHP = function() {
     // Находим элемент полоски жизней
     var hpBar = this.htmlReference.querySelector(".hpBar");
-    var PP = this.hp;
+    var Pw = this.hp;
 
     // Обновляем информацию
-    hpBar.innerHTML = "PP: " + PP;
-    hpBar.style.backgroundPosition = "-" + PP + "%";
+    hpBar.innerHTML = "Pw: " + Pw ;
+    hpBar.style.backgroundPosition = "-" + Pw + "%";
 }
 
 
