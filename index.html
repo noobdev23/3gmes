@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Bitcone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-oCEfEGsHPn4kzYPx+13lZOpv9H2fG09+6y4Cf4EaDU5S6IpCi5U5LR5jOWcB6Bcb" crossorigin="anonymous">
     <style>
         /* Styles for the button and its surrounding container */
         body {
@@ -39,15 +41,24 @@
             text-align: center;
             font-size: 28px;
             color: goldenrod;
-            position: relative; /* Needed for positioning the cones and border */
+            position: relative;
         }
 
-        /* Traffic cone border using Unicode characters */
+        /* Traffic cone border container */
+        #trafficBorderContainer {
+            text-align: center;
+            position: relative;
+        }
+
+        /* Traffic cone border using Font Awesome */
         #trafficBorder {
-            display: block;
             font-size: 36px;
-            margin: 20px 0;
+            margin-top: 20px;
             color: orange; /* Set the color to orange for the cones */
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
@@ -56,13 +67,15 @@
     <div id="restartButtonContainer">
         <button id="restartButton">RESTART</button>
         <p id="playNowText">
-            <!-- Traffic cone border using Unicode characters -->
-            &#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;&#x1F6C1;
             Play Now And Earn Cone!
         </p>
     </div>
     <div id="battleArea">
         <div id="enemies"></div>
+    </div>
+    <div id="trafficBorderContainer">
+        <!-- Use Font Awesome for the traffic cone icon -->
+        <span id="trafficBorder"><i class="fas fa-cone"></i></span>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="js/gameSettings.js" defer></script>
