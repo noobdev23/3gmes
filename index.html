@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>Bitcone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Include Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-oCEfEGsHPn4kzYPx+13lZOpv9H2fG09+6y4Cf4EaDU5S6IpCi5U5LR5jOWcB6Bcb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         /* Styles for the button and its surrounding container */
         body {
@@ -41,24 +40,21 @@
             text-align: center;
             font-size: 28px;
             color: goldenrod;
-            position: relative;
+            position: relative; /* Needed for positioning the clouds and border */
         }
 
-        /* Traffic cone border container */
-        #trafficBorderContainer {
-            text-align: center;
-            position: relative;
+        /* Cloud shapes using HTML entities */
+        .cloud {
+            display: inline-block;
+            font-size: 24px;
+            margin: 0 5px;
         }
 
-        /* Traffic cone border using Font Awesome */
+        /* Traffic border using Unicode characters */
         #trafficBorder {
-            font-size: 36px;
-            margin-top: 20px;
-            color: orange; /* Set the color to orange for the cones */
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            display: block;
+            font-size: 40px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -67,15 +63,20 @@
     <div id="restartButtonContainer">
         <button id="restartButton">RESTART</button>
         <p id="playNowText">
+            <span class="cloud">&#9729;</span>
+            <span class="cloud">&#9729;</span>
+            <span class="cloud">&#9729;</span>
+            <!-- Traffic border using Unicode characters -->
+            <span id="trafficBorder">&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;</span>
             Play Now And Earn Cone!
+            <!-- Cloud shapes using HTML entities -->
+            <span class="cloud">&#9729;</span>
+            <span class="cloud">&#9729;</span>
+            <span class="cloud">&#9729;</span>
         </p>
     </div>
     <div id="battleArea">
         <div id="enemies"></div>
-    </div>
-    <div id="trafficBorderContainer">
-        <!-- Use Font Awesome for the traffic cone icon -->
-        <span id="trafficBorder"><i class="fas fa-cone"></i></span>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="js/gameSettings.js" defer></script>
