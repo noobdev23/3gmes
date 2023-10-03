@@ -125,11 +125,11 @@ Unit.prototype.shield = function() {
 Unit.prototype.updateHP = function() {
     // Находим элемент полоски жизней
     var hpBar = this.htmlReference.querySelector(".hpBar");
-    var HP = this.hp;
+    var PP = this.hp;
 
     // Обновляем информацию
-    hpBar.innerHTML = "HP: " + HP;
-    hpBar.style.backgroundPosition = "-" + HP + "%";
+    hpBar.innerHTML = "PP: " + PP;
+    hpBar.style.backgroundPosition = "-" + PP + "%";
 }
 
 
