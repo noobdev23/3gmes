@@ -13,7 +13,7 @@ body {
     height: 600px;
 
     background-image: url('../images/battleBackground.jpg');
-    background-position: right top ;
+    background-position: right bottom ;
 }
 
 .unit {
